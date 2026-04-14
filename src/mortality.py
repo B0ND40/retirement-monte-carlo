@@ -18,7 +18,7 @@ def simulate_lifespan(mean=85, std=10, min_age=65):
 	return max(min_age, int(age))
 
 if __name__ == "__main__":
-	for _ in range(5):
+	for i in range(5):
 		print(simulate_lifespan())
 
 
