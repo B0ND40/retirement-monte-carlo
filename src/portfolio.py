@@ -1,6 +1,6 @@
 import numpy as np
 
-def simulate_returns(mu, sigma, T, dt=1):
+def simulate_returns(mu, sigma, T, dt=1, seed=None):
 	"""
 	Simulate returns using Geometric Brownian Motion.
 
