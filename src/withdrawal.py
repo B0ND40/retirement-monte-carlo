@@ -12,4 +12,4 @@ def fixed_withdrawal(balance, withdrawal_amount):
 	return balance - withdrawal_amount
 
 if __name__ == "__main__":
-	print(fixed_withdrawal(100000, 40000))
+	print(fixed_withdrawal(100000, 40000)) # Fixed withdrawal example
