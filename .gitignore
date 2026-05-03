@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Python cache
 __pycache__/
 *.pyc
@@ -14,3 +15,16 @@ venv/
 
 # Output / results
 results/
+=======
+__pycache__/
+*.pyc
+*.pyo
+
+.env
+
+*.png
+*.jpg
+
+.vscode/
+.DS_Store
+>>>>>>> 35840ae (Remove __pycache__ and add to gitignore)
