@@ -1,15 +1,16 @@
 def fixed_withdrawal(balance, withdrawal_amount):
-	"""
-	Subtract a fixed withdrawal amount from the portfolio.
+    """
+    Apply a fixed annual withdrawal to the portfolio.
 
-	Parameters:
-		balance (float): current portfolio value
-		withdrawal_amount (float): annual withdrawal
+    Parameters:
+        balance (float): Current portfolio value
+        withdrawal_amount (float): Annual withdrawal amount
 
-	Returns:
-		float: updated balance
-	"""
-	return balance - withdrawal_amount
+    Returns:
+        float: Updated portfolio balance (not allowed to go below zero)
+    """
 
-if __name__ == "__main__":
-	print(fixed_withdrawal(100000, 40000)) # Fixed withdrawal example
+    new_balance = balance - withdrawal_amount
+
+    # Prevent negative balances and return the updated balance.
+    return max(new_balance, 0.0)
